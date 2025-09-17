@@ -1,5 +1,3 @@
-
-
 <?php
 #patrimonio,numero_de_serie,marca,modelo,categoria,localizacao, status_device,observacao
 /*session_start();
@@ -21,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $pdo = null;
             $stmt = null;
-            die();
+            //die();
         } catch(PDOException $e){
             die("Query falhou: " .$e->getMessage());
         }
@@ -30,39 +28,45 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 $identificador = $_POST["identificador"];
                 $valor_identificador = $_POST["valor_identificador"];
 
-                strtolower($identificador);
-                strtolower($valor_identificador);
+                $identificador= strtolower($identificador);
+                $valor_identificador= strtolower($valor_identificador);
+
 
                     
                 
 
-            try{
-                require "dbh.inc.php";
+                try{
+                    require "dbh.inc.php";
 
-                
-                $query = "SELECT * FROM testedb WHERE :identificador = :valor_identificador;";
-                
-                $stmt= $pdo->prepare($query);
-                
-                $stmt->bindParam(":identificador",$identificador);
-                $stmt->bindParam(":valor_identificador",$valor_identificador);
-            
+                    $colunas_permitidas=["patrimonio","numero_de_serie","marca","modelo","categoria","localizacao","status_device","observacao"];
+
+                    if(in_array($identificador,$colunas_permitidas)){
+                        $query = "SELECT * FROM testedb WHERE `$identificador` = :valor_identificador;";
+                        
+                        $stmt= $pdo->prepare($query);
+                        
+                        
+                        $stmt->bindParam(":valor_identificador",$valor_identificador);
+                    
+    
+    
+                        $stmt->execute();
+                        
+                        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                        
+    
+                        $pdo = null;
+                        $stmt = null;
+                        //die();
+
+                    }
 
 
-                $stmt->execute();
-                
-                $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                
+                    
+                }   catch(PDOException $e) {
+                    die("Query falhou: " .$e->getMessage());
 
-                $pdo = null;
-                $stmt = null;
-                die();
-
-                
-            }   catch(PDOException $e) {
-                die("Query falhou: " .$e->getMessage());
-
-                        }
+                            }
     }
 } else {
     header("Location: ../index.php");

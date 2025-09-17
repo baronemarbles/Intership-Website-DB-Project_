@@ -39,9 +39,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             
             $pdo = null;
             $stmt = null;
-            die();
-            echo("<script>alert('Exclusão realizada com sucesso');</script>");
             header("Location: ../index.php");    
+            echo("<script>alert('Exclusão realizada com sucesso');</script>");
+            die();
 
         }   catch(PDOException $e) {
             die("Query falhou: " .$e->getMessage());

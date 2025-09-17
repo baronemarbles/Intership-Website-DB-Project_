@@ -182,8 +182,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                     scale:100.5%;
                                 } 
                     </style>";
-            echo "<div id='back_buttn'><a href='../index.php'><button id='bk_buttn'>Voltar</button></a></div></style";
-            echo "<script>alert(Alteração realizada com êxito!)</script>";
+                    echo "Alteração realizada com êxito!";
+                    echo "<div id='back_buttn'><a href='../index.php'><button id='bk_buttn'>Voltar</button></a></div></style";
             
         } else{
             throw new Exception("Os dados do dispositivo anterior não estão disponíveis ou não são uma array.");

@@ -127,11 +127,15 @@ h1{
 }
 
 
+#form_pre-highlight-green{
+    color: rgb(0, 236, 51);
+}
+
 
 h3{
     text-align: center;
     letter-spacing: 1.5px;
-    color:black;
+    color:rgb(10,10,10);
 }
 
 input[type=text],input[type=password] {

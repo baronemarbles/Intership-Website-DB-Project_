@@ -74,7 +74,7 @@ if(!isset($_SESSION['username'])) {
          <div class="centralized">
             <h3>Registre o dispositivo</h3>
 
-            <form action = "includes/dispositivo.inc.php" class ="form"method = "POST">
+            <form action = "includes/create-device.php" class ="form"method = "POST">
                 <input type = "text" name="patrimonio" placeholder="Patrimônio" required>
                 <input type ="text" name="numero_de_serie" placeholder="Número de Série" required>
                 <input type ="text" name="marca" placeholder="Marca" required>

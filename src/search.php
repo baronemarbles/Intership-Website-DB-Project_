@@ -54,7 +54,7 @@
 
 
     <div class="centralized">
-       <form action = "includes/search_h.php" method = "POST">
+       <form action = "includes/search-devices.php" method = "POST">
             <p>Insira o filtro que você deseja e valor dele. <br> <a id="Highlights">Os filtros devem ser passados exatamente como listados abaixo!</a></p>
                 <pre><a id="highlight_search_example">patrimonio | numero_de_serie | marca | modelo | categoria | localizacao | status_device | observacao</a></pre> 
 

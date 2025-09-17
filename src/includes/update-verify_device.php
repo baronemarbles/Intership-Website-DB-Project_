@@ -115,7 +115,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <!--patrimonio,numero_de_serie,marca,modelo,categoria,localizacao, status_device,observacao -->
         <div class="centralized">
             <h3>Dispositivo encontrado</h3>
-            <form action = "updatefpreennchido.php" class ="form"method = "POST">
+            <form action = "update-update_filled_device.php" class ="form"method = "POST">
                     <label class="label" for="patrimonio">Patrimonio:</label>    
                     <input type = "text" name="patrimonio" id="patrimonio" placeholder="Patrimônio" value="<?php echo $arr_dispositivo_e[0]; ?>" required>
                     

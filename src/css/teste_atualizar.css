@@ -233,7 +233,7 @@ h1{
 
 
 #logo_on_page{
-    width:320px;
+    max-width:320px;
     display:flex;
     justify-self: center;
     margin-bottom:5px;
@@ -244,7 +244,11 @@ h1{
 h3{
     text-align: center;
     letter-spacing: 1.5px;
-    color:black;
+    color:rgb(10,10,10);
+}
+
+#form_pre-highlight-green{
+    color: rgb(0, 201, 43);
 }
 
 input[type=text],input[type=password] {

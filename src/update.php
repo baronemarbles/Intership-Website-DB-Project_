@@ -63,9 +63,9 @@ if(!isset($_SESSION['username'])) {
 
  <!--Criando o menu de busca-->
         <div class="centralized">
-        <form action = "includes/processaform_update.php" method = "POST">
+        <form action = "includes/update-verify_device.php" method = "POST">
                 <p>Encontre o dispositivo a ser alterado  <a id="Highlights"></a><br>
-                <pre id="highlight_search_example" >E depois faça suas alterações.</pre> 
+                <pre id="highlight_search_example" >E <a id="form_pre-highlight-green">depois</a> faça suas alterações.</pre> 
                 </p>
                 <div id=box_form>
                 <input type ="text" name="patrimonio" placeholder="Patrimônio" required>

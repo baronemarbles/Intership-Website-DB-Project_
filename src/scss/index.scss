@@ -1,0 +1,34 @@
+@import "./snippets/_global.scss";
+@import "./snippets/_fonts.scss";
+@import "./snippets/_logo.scss";
+@import "./snippets/_menuPerfil.scss";
+
+
+h1{
+    text-align: center;
+    position: static;
+    letter-spacing: 2.5px;
+    color:white;
+    
+}
+
+h3{
+    text-align: center;
+    margin-top: 0px;
+    letter-spacing: 1.5px;
+    color:black;
+}
+
+@keyframes botao {
+    0%{
+        background-color: $roxoHighlight;
+        color: white;
+    }
+
+    100%{
+        background-color: $verdeBotaoHover;
+        color:white;
+        border: 2px solid $verdeBotaoHover;
+        scale: 1.2em;
+    }
+}

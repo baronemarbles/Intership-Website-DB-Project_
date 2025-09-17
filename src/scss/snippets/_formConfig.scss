@@ -1,0 +1,60 @@
+@import "_variables";
+
+.centralized{
+    width:max-content;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $formBg;
+    margin-left: auto;
+    margin-right:auto;
+    padding:map-get($padding, "padrao");
+    border-radius: 12px;
+}
+
+input[type=text],input[type=password] {
+    width: 100%;
+    height:23px;
+    border: 2px solid $formBorder;
+    border-radius: 5px; 
+    text-align: center;
+    margin-bottom: 6%;
+    box-shadow: -3px 0px 0px  $verde_limao;
+    transition: scale 0.2s ease-in-out;
+    display:block;
+  
+}
+
+input:focus{
+    scale:103%;
+    margin-left: 0%;
+    background-color: white;
+    color:black;
+   
+
+}
+
+form{
+    align-items: center;
+   
+}
+
+.buttn{
+    
+    margin-top: 25px;
+    display: block;
+    cursor: pointer;
+    background-color: $verdeBotao;
+    color:$textoBotao;
+    border-radius: 8px;
+    border: 2px solid $verdeBotao;
+    transition: box-shadow, background-color .10s ease-in-out;
+    
+  
+}
+
+.buttn:hover {
+    background-color: rgb(0, 236, 51);
+    border: 2px solid rgb(0, 236, 51);
+    box-shadow: 0 0 15px $verdeBotaoHover;
+}

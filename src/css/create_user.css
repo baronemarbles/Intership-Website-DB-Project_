@@ -67,7 +67,7 @@ body{
   /*fim barra scroll*/
 
   header{
-    border: 4px solid goldenrod;
+    /*border: 4px solid goldenrod;*/
     max-width: 421px;
     width: fit-content;
     margin-inline: auto;
@@ -75,7 +75,7 @@ body{
   }
   
   .header-image_hero{
-    border:2px solid yellow;
+    /*border:2px solid yellow;*/
     width: 100%;
     
     /*min-width: 371px;*/
@@ -97,7 +97,7 @@ body{
   .section-formulario_form{
     height: fit-content;
     padding: 1rem;
-    border: 2px solid gold;
+    /*border: 2px solid gold;*/
     border-radius: inherit;
   }
 
@@ -105,7 +105,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     border-radius: 1rem 2rem;
     padding: 1rem;
     justify-content: space-between;
@@ -113,7 +113,7 @@ body{
   }
 
   .input-row{
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     height: fit-content;/*ou 3.6rem(label+row-field height)*/
     display:flex;
     flex-direction: column;

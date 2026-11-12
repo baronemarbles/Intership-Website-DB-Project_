@@ -37,7 +37,7 @@ $ git clone git@github.com:baronemarbles/Intership-Website-DB-Project_.git
 $ cd Intership-website-DB-project_
 
 #Make the ".env" file and set the environment variables
-$ mk .env
+$ touch .env
 $ vi .env
 #IN THE VI OR VIM FILE EDITOR -> hit 'i' key to enter in "insert" mode so you can actually type into the file
 DB_HOST=db #If you changed the docker-compose file and altered the name of the database service, then put the new name here
